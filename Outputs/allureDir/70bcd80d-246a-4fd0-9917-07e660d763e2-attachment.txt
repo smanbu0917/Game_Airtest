@@ -1,0 +1,37 @@
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 shell pm path jp.co.cyberagent.stf.rotationwatcher
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 shell export CLASSPATH=/data/app/jp.co.cyberagent.stf.rotationwatcher-1/base.apk;exec app_process /system/bin jp.co.cyberagent.stf.rotationwatcher.RotationWatcher
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 shell ls /data/local/tmp/minicap
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 shell ls /data/local/tmp/minicap.so
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -v 2>&1
+DEBUG    airtest.core.android.minicap:minicap.py:74 WARNING: linker: /data/local/tmp/minicap has text relocations. This is wasting memory and prevents security hardening. Please fix.
+version:5
+DEBUG    airtest.core.android.minicap:minicap.py:84 upgrade minicap to lastest version: -1->6
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 shell rm -r /data/local/tmp/minicap*
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 shell getprop ro.product.cpu.abi
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 shell getprop ro.build.version.preview_sdk
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 shell getprop ro.build.version.release
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 push D:\software\Python37\lib\site-packages\airtest\core\android\static\stf_libs\x86\minicap /data/local/tmp/minicap
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 shell chmod 755 /data/local/tmp/minicap
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 push D:\software\Python37\lib\site-packages\airtest\core\android\static\stf_libs\minicap-shared/aosp/libs/android-25/x86/minicap.so /data/local/tmp/minicap.so
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 shell chmod 755 /data/local/tmp/minicap.so
+INFO     airtest.core.android.minicap:minicap.py:140 minicap installation finished
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -i
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 shell dumpsys window displays
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 shell getprop ro.product.cpu.abi
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 shell getprop ro.build.version.sdk
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 shell ls -l /data/local/tmp/minitouch
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 push D:\\software\\Python37\\lib\\site-packages\\airtest\\core\\android\\static\\stf_libs\\x86\\minitouch /data/local/tmp/minitouch
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 shell chmod 755 /data/local/tmp/minitouch
+INFO     airtest.core.android.touch_methods.minitouch:minitouch.py:59 install_minitouch finished
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -i
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 shell dumpsys window displays
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 forward --no-rebind tcp:13723 localabstract:minitouch_13723
+DEBUG    airtest.core.android.adb:adb.py:144 D:\software\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s emulator-5554 shell /data/local/tmp/minitouch -n 'minitouch_13723' 2>&1
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [minitouch_server]b'Note: device /dev/input/mouse0 is not supported by libevdev'
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [minitouch_server]b'Note: device /dev/input/mice is not supported by libevdev'
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [minitouch_server]b'Type B touch device input (19199x10799 with 16 contacts) detected on /dev/input/event3 (score 35413)'
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [minitouch_server]b'Note: hard-limiting maximum number of contacts to 10'
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [minitouch_server]b'Connection established'
+DEBUG    airtest.core.android.touch_methods.minitouch:minitouch.py:142 minitouch header:b'v 1\n^ 10 19199 10799 2\n$ 16420\n'
+INFO     airtest.core.android.rotation:rotation.py:97 update orientation 0->2
+DEBUG    airtest.core.android.minicap:minicap.py:377 update_rotation: 180
